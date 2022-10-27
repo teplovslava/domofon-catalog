@@ -603,14 +603,14 @@ body{
     margin-bottom: 180px;
 }
 
-.install-head{
+.install-head {
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
     line-height: 140%;
     color: #000000;
     margin-bottom: 60px;
-    width: 57%;
+    width: 67%;
 }
 
 .install-text{
@@ -634,9 +634,9 @@ body{
  }
 
 
-.qustions{
+ .qustions {
     margin-left: 12.95%;
-    width: 72.05%;
+    width: 74.2%;
     padding-bottom: 254px;
 }
 
@@ -652,12 +652,8 @@ body{
 }
 
 .qustion-list{
-	display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    gap: 71px;
-    height: 327px;
-    justify-content: space-between;
+    column-count: 2;
+    column-fill:inherit;
 }
 
 .qustion-name{
@@ -674,11 +670,15 @@ body{
     width: 600px;
 }
 
+.display-none{
+    display: none;height: 0;
+}
 
-.qustion-list__item{
-    width: 47.05%;
+
+.qustion-list__item {
+    width: 92.6%;
     cursor: pointer;
-
+    margin-bottom: 56px;
 }
 
 .qustion-list__item img{
@@ -695,6 +695,7 @@ body{
     font-size: 14px;
     line-height: 140%;
     max-width: 600px;
+    height: auto;
 }
 
 .active-qustion img{
@@ -709,6 +710,8 @@ body{
 .active-qustion{
     padding-bottom: 24px;
     border-bottom: 1px solid  #CBCBCB;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .active-qustion h4{
@@ -718,10 +721,10 @@ body{
     margin-bottom: 24px;
 }
 
-.qustion-bottom{
+.qustion-bottom {
     background-color: #F6F6F6;
     align-items: center;
-    width: 102.85%;
+    width: 100%;
     position: relative;
 }
 
@@ -744,12 +747,11 @@ body{
     margin-right: 5%;
 }
 
-.qustion-bottom__descr h3{
+.qustion-bottom__descr h3 {
     font-weight: 400;
     font-size: 48px;
     line-height: 140%;
-    margin-bottom: -15px;
-
+    margin-bottom: 5px;
 }
 
 .qustion-bottom__descr p{
@@ -771,17 +773,19 @@ body{
     outline: 0;
 }
 
-.question-bottom__main{
+.question-bottom__main {
     margin-right: 23px;
+    width: 238px;
 }
 
-.question-form button{
+.question-form button {
     cursor: pointer;
     font-weight: 700;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.04em;
-    padding: 18px 52px;
+    padding: 18px;
+    width: 100%;
     background-color: #21D091;
     color: #FFFFFF;
     transition: all .2s ease-in-out;
@@ -817,8 +821,8 @@ body{
     margin-right: 26px;
 }
 
-.footer{
-    margin-left: 7.95%;
+.footer {
+    margin-left: 13.15%;
     position: relative;
     padding-bottom: 120px;
 }
@@ -1041,9 +1045,7 @@ body{
 
 
 @media (max-width:1780px) {
-    .qustion-list {
-        height: 410px;
-    }
+
 
     .hero-form {
         width: 14%;
@@ -1163,12 +1165,6 @@ body{
     }
      
 
-    .qustion-list {
-
-        gap: 50px;
-        
-    }
-
 
     .install-head {
         font-size: 50px;
@@ -1253,10 +1249,6 @@ body{
         margin-bottom: 32px;
     }
 
-    .qustion-list {
-        gap: 28px;
-       
-    }
 
     .qustion-bottom__descr p {
         font-size: 10px;
@@ -1276,7 +1268,7 @@ body{
         font-size: 10px;
         width: 27%;
         margin-bottom: 40px;
-        margin-right: 0px;
+        margin-right: 15px;
     }
 
     .img-box::after {
@@ -1474,9 +1466,6 @@ body{
     }
 
 
-    .qustion-list {
-        gap: 25px;
-    }
 
     .catalog {
         width: 91.99%;
@@ -1516,9 +1505,7 @@ body{
         font-size: 10px;
     }
 
-    .qustion-list {
-        height: 227px;
-    }
+
 
     .qustion-bottom__descr h3 {
         font-size: 12px;
@@ -1781,8 +1768,7 @@ body{
     }
 
     .qustion-list {
-        height: auto;
-        gap: 40px;
+        column-count: 1;
     }
 
     .qustion-list__item {
